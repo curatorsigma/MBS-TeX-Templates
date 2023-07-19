@@ -1,0 +1,33 @@
+\usepackage{fontspec}
+\usepackage[bidi=basic]{babel}
+
+\defaultfontfeatures{ Scale=MatchUppercase,
+                      Ligatures=TeX,
+                      Renderer=HarfBuzz }
+
+% German
+\babelprovide[import, main]{german}
+\babelfont{rm}
+          {NewComputerModern10-Book}
+\babelfont{sf}
+          {NewComputerModernSans10-Book}
+\babelfont{tt}
+          {NewComputerModernMono10-Book}
+
+% Greek
+\babelprovide[import, onchar=ids fonts]{greek}
+\babelfont[greek]
+           {rm}
+           [Path = /Users/jonsch/MBS/_Templates/static/fonts/GalatiaSIL-2.1-web/,
+           Extension = .ttf,
+           Renderer=HarfBuzz ]
+          {GalSILR}
+
+% Hebrew
+\babelprovide[import=he, onchar=ids fonts]{hebrew}
+\babelfont[hebrew]
+           {rm}
+           [Path = /Users/jonsch/MBS/_Templates/static/fonts/EzraSIL2.51/,
+           Extension = .ttf,
+           Renderer=HarfBuzz ]
+          {SILEOTSR}
