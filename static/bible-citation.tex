@@ -10,9 +10,10 @@
 \brthreeabbrvname
 
 % Custom macros
-\newcommand{\vattrib}[2]{\attrib{\bibleverse{#1}{ #2}}}
-\newcommand{\vattribtransl}[3]{\attrib{\bibleverse{#1}{ #2}, #3}}
-\newcommand\bibfoot[2]{\footnote{\bibleverse{#1}{ #2}}}
+\newcommand{\bibverse}[2]{\ibibleverse{#1}{ #2}}
+\newcommand{\vattrib}[2]{\attrib{\bibverse{#1}{#2}}}
+\newcommand{\vattribtransl}[3]{\attrib{\bibverse{#1}{#2}, #3}}
+\newcommand\bibfoot[2]{\footnote{\bibverse{#1}{#2}}}
 
 % german book names
 % \setbooktitle{Judges}{Richter}
@@ -60,6 +61,12 @@
 
 
 % German Short Book titles
+\setbooktitle{Genesis}{Gen}
+\setbooktitle{Exodus}{Ex}
+\setbooktitle{Leviticus}{Lev}
+\setbooktitle{Numbers}{Num}
+\setbooktitle{Deuteronomy}{Deut}
+
 \setbooktitle{Judges}{Ri}
 \setbooktitle{ISamuel}{1 Sam}
 \setbooktitle{IISamuel}{2 Sam}
