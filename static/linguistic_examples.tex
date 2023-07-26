@@ -1,6 +1,7 @@
 \usepackage{ifthen}
 \usepackage{environ}
 \usepackage{letltxmacro}
+\usepackage{amssymb}
 
 \newcounter{lingexmpl}
 \NewEnviron{lingex}[1][FALSE]
@@ -20,3 +21,11 @@
     \LetLtxMacro\oldref{\ref}%
     \DeclareRobustCommand{\ref}[2][]{(\oldref#1{#2})}%
 }
+
+% root-sign
+\newcommand{\lroot}[1]{\raisebox{1mm}{$\sqrt{}$}#1}
+
+\newcommand{\MT}{$\mathfrak{M}$ }
+\newcommand{\LXX}{$\mathfrak{G}$ }
+\newfontfamily\DoulosSIL{Doulos SIL}
+\newcommand{\SamPent}{{\DoulosSIL ^^^^214f}}
