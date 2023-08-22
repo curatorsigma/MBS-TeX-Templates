@@ -12,6 +12,8 @@
 \usepackage{csquotes}
 \usepackage[backend=biber,style=alphabetic,citestyle=alphabetic]{biblatex}
 \addbibresource{/Users/jonsch/MBS/MBS-TeX-Templates/static/Theologie_Bibliography.bib}
+% No S. in front of postnote, because I can't cite non-standard books otherwise
+\DeclareFieldFormat{postnote}{#1}
 
 % urls
 \usepackage{url}
